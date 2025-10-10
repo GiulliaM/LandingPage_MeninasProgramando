@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meninas Programando | IFSP Guarulhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="container-logo">
+            <img src="placeholder_logo_mp.png" alt="Logo Meninas Programando" class="logo">
+            <h1>Meninas Programando</h1>
+        </div>
+        <nav>
+            <a href="#recursos">Recursos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="secao-principal">
+            <h1>O Futuro da Tecnologia Começa Aqui.</h1>
+            <p class="subtitulo">Um projeto de extensão do IFSP Guarulhos que oferece oficinas, mentorias e apoio para incentivar meninas na área de TI.</p>
+            
+            <div class="visual-destaque">
+                <img src="placeholder_hero_image.jpg" alt="Ilustração de mulheres em tecnologia">
+            </div>
+
+            <div class="ctas-principais">
+                <a href="#formulario-inscricao" class="btn-principal">
+                    Inscreva-se na Próxima Oficina
+                </a>
+                
+                <a href="mailto:mpereira@ifsp.edu.br?subject=Apoio_MeninasProgramando" class="btn-secundario">
+                    Quero Ser Voluntária / Apoiar o Projeto
+                </a>
+            </div>
+        </section>
+
+        <!-- Formulário de inscrição -->
+        <section id="formulario-inscricao" class="secao-formulario">
+            <h2>Formulário de Inscrição</h2>
+            <form id="inscricao-form">
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="10" max="99" required>
+                </div>
+                <div>
+                    <label for="instituicao">Instituição de ensino:</label>
+                    <input type="text" id="instituicao" name="instituicao" required>
+                </div>
+                <div>
+                    <label for="interesse">Por que quer participar?</label>
+                    <textarea id="interesse" name="interesse" rows="3" required></textarea>
+                </div>
+                <div>
+                    <label for="oficina">Oficina de interesse:</label>
+                    <select id="oficina" name="oficina" required>
+                        <option value="">Selecione...</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="ambas">Ambas</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+        <!-- Fim do formulário -->
+
+        <section id="beneficios" class="secao-lista">
+            <h2>Por Que o Meninas Programando é a Escolha Certa?</h2>
+            <ul>
+                <li>Aprenda **Python e JavaScript** em workshops focados na prática.</li>
+                <li>Receba **mentoria** com profissionais experientes na área de TI.</li>
+                <li>Obtenha um **Certificado** de Extensão reconhecido pelo IFSP.</li>
+                <li>Participe de uma **Comunidade** feminina de apoio e inspiração.</li>
+            </ul>
+        </section>
+
+        <section id="historias" class="secao-cards">
+            <h2>Elas Fizeram! Inspiração para a Sua Carreira.</h2>
+            <div class="container-depoimentos">
+                
+                <article class="depoimento">
+                    <img src="placeholder_foto1.jpg" alt="Foto da Aluna 1">
+                    <p>"O projeto me deu a confiança e a base para escolher a carreira em Análise e Desenvolvimento de Sistemas."</p>
+                    <p class="autor">- Maria da Silva, Ex-participante</p>
+                </article>
+                
+                <article class="depoimento">
+                    <img src="placeholder_foto2.jpg" alt="Foto da Aluna 2">
+                    <p>"Como voluntária, pude ver o impacto do nosso trabalho. É inspirador fazer parte dessa mudança."</p>
+                    <p class="autor">- Ana Souza, Voluntária</p>
+                </article>
+                
+                <article class="depoimento">
+                    <img src="placeholder_foto3.jpg" alt="Foto da Aluna 3">
+                    <p>"As oficinas de Python foram a minha porta de entrada para o mundo da programação e me fizeram amar a área."</p>
+                    <p class="autor">- Juliana Lima, Aluna IFSP</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="recursos" class="secao-video">
+            <h2>Comece a Programar Agora: Recursos Gratuitos</h2>
+            <div class="container-recursos">
+                
+                <div class="recurso-video">
+                    <h3>Introdução ao Python</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g_R_Asf6Co0?si=2O6KLNUg7UIKejaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                <div class="recurso-video">
+                    <h3>Primeiros Passos em JavaScript</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7mnxUI4u00?si=GuS6mHJMXKn-_Ngi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                
+            </div>
+        </section>
+        
+        <section class="cta-secundario">
+            <h2>Não perca tempo! Junte-se a nós.</h2>
+            <a href="#formulario-inscricao" class="btn-principal grande">
+                Inscreva-se e Mude Sua Carreira
+            </a>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <div class="footer-contato">
+            <p><strong>&copy; 2024 Projeto de Extensão Meninas Programando</strong> | IFSP Campus Guarulhos</p>
+            <p><strong>Contato:</strong> <a href="mailto:mpereira@ifsp.edu.br">mpereira@ifsp.edu.br</a> (Marcia Pereira, P.O.)</p>
+        </div>
+        <div class="social-links">
+            <a href="URL_INSTAGRAM" target="_blank">Instagram</a> | 
+            <a href="URL_LINKEDIN" target="_blank">LinkedIn</a> |
+            <a href="URL_YOUTUBE" target="_blank">YouTube</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
