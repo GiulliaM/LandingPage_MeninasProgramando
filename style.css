@@ -81,13 +81,46 @@ a {
 /* Footer */
 footer {
   padding: 3rem 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1), transparent);
+  background: black;
+  color: rgba(255,255,255,0.6);
+  position: relative; /* Garante que não fique fora do fluxo */
+  width: 100%;
+  z-index: 1;
+}
+
+
+#recursos{
+      background: linear-gradient(180deg, #f8f6fb 0%, #f0e8fa 100%);
+    color: var(--black);
+}
+#recursos .resource-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.05);
+  color: var(--black);
+}
+
+#contato{
+      background: linear-gradient(180deg, #f8f6fb 0%, #f0e8fa 100%);
+    color: var(--black);
+}
+#contato .resource-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.05);
+  color: var(--black);
+}
+
+#voluntario .input, #voluntario .form-control, #voluntario select{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
 }
 
 /* Animations */
 .floaty {
   animation: floaty 6s ease-in-out infinite;
 }
+
+
 
 @keyframes floaty {
   0% { transform: translateY(0); }
