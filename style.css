@@ -1,0 +1,115 @@
+/* Paleta: rosa (#ff5da2), roxo (#6f42c1), branco, preto */
+:root {
+  --pink: #ff5da2;
+  --purple: #6f42c1;
+  --white: #ffffff;
+  --black: #0b0b0b;
+  --glass: rgba(255,255,255,0.06);
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(180deg, #0b0710 0%, #12061a 60%);
+  color: var(--white);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+a {
+  color: var(--pink);
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(6px);
+  background: linear-gradient(90deg, rgba(111,66,193,0.12), rgba(255,93,162,0.06));
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero .code-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  filter: blur(1px);
+  background-image: radial-gradient(circle at 10% 10%, rgba(111,66,193,0.08), transparent 10%), linear-gradient(90deg, rgba(255,93,162,0.03), transparent 40%);
+}
+
+.badge-pulse {
+  display: inline-block;
+  padding: .35em .8em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--purple));
+  box-shadow: 0 6px 20px rgba(111,66,193,0.18);
+  font-weight: 600;
+}
+
+/* Card styles */
+.resource-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  color: white;
+}
+
+/* Code-styled box */
+.code-snippet {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+  background: #07060a;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #cfcfe6;
+}
+
+/* Buttons */
+.btn-accent {
+  background: linear-gradient(90deg, var(--pink), var(--purple));
+  border: 0;
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1), transparent);
+}
+
+/* Animations */
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .6s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+  .hero {
+    padding: 8rem 0;
+  }
+}

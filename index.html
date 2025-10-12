@@ -1,152 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meninas Programando | IFSP Guarulhos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Meninas Programando — Recursos & Voluntariado</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 
-    <header id="cabecalho">
-        <div class="container-logo">
-            <img src="placeholder_logo_mp.png" alt="Logo Meninas Programando" class="logo">
-            <h1>Meninas Programando</h1>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <i class="fa-solid fa-code fa-2x" style="color:var(--pink)"></i>
+      <div>
+        <div style="font-weight:700;line-height:1; color: aliceblue;">Meninas Programando</div>
+        <small style="font-size:10px;opacity:.8; color:aliceblue">Recursos • Voluntariado • Comunidade</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color:var(--white)"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#voluntario">Voluntarie-se</a></li>
+        <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-outline-light" href="#voluntario">Quero Ajudar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="code-bg"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-start reveal">
+        <h1 style="font-weight:800;font-size:2.4rem">Meninas Programando</h1>
+        <p class="lead" style="opacity:.95">Comunidade e recursos gratuitos para meninas aprenderem programação, colaborarem em projetos e encontrarem oportunidades de voluntariado e mentoria.</p>
+        <div class="d-flex gap-2 flex-column flex-sm-row mt-3">
+          <a href="#recursos" class="btn btn-accent btn-lg"><i class="fa-solid fa-laptop-code me-2"></i>Explorar Recursos</a>
+          <a href="#voluntario" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-hands-helping me-2"></i>Voluntarie-se</a>
         </div>
-        <nav>
-            <a href="#recursos">Recursos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero" class="secao-principal">
-            <h1>O Futuro da Tecnologia Começa Aqui.</h1>
-            <p class="subtitulo">Um projeto de extensão do IFSP Guarulhos que oferece oficinas, mentorias e apoio para incentivar meninas na área de TI.</p>
-            
-            <div class="visual-destaque">
-                <img src="placeholder_hero_image.jpg" alt="Ilustração de mulheres em tecnologia">
-            </div>
-
-            <div class="ctas-principais">
-                <a href="#formulario-inscricao" class="btn-principal">
-                    Inscreva-se na Próxima Oficina
-                </a>
-                
-                <a href="mailto:mpereira@ifsp.edu.br?subject=Apoio_MeninasProgramando" class="btn-secundario">
-                    Quero Ser Voluntária / Apoiar o Projeto
-                </a>
-            </div>
-        </section>
-
-        <!-- Formulário de inscrição -->
-        <section id="formulario-inscricao" class="secao-formulario">
-            <h2>Formulário de Inscrição</h2>
-            <form id="inscricao-form">
-                <div>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade" min="10" max="99" required>
-                </div>
-                <div>
-                    <label for="instituicao">Instituição de ensino:</label>
-                    <input type="text" id="instituicao" name="instituicao" required>
-                </div>
-                <div>
-                    <label for="interesse">Por que quer participar?</label>
-                    <textarea id="interesse" name="interesse" rows="3" required></textarea>
-                </div>
-                <div>
-                    <label for="oficina">Oficina de interesse:</label>
-                    <select id="oficina" name="oficina" required>
-                        <option value="">Selecione...</option>
-                        <option value="python">Python</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="ambas">Ambas</option>
-                    </select>
-                </div>
-                <button type="submit">Enviar Inscrição</button>
-            </form>
-        </section>
-        <!-- Fim do formulário -->
-
-        <section id="beneficios" class="secao-lista">
-            <h2>Por Que o Meninas Programando é a Escolha Certa?</h2>
-            <ul>
-                <li>Aprenda **Python e JavaScript** em workshops focados na prática.</li>
-                <li>Receba **mentoria** com profissionais experientes na área de TI.</li>
-                <li>Obtenha um **Certificado** de Extensão reconhecido pelo IFSP.</li>
-                <li>Participe de uma **Comunidade** feminina de apoio e inspiração.</li>
-            </ul>
-        </section>
-
-        <section id="historias" class="secao-cards">
-            <h2>Elas Fizeram! Inspiração para a Sua Carreira.</h2>
-            <div class="container-depoimentos">
-                
-                <article class="depoimento">
-                    <img src="placeholder_foto1.jpg" alt="Foto da Aluna 1">
-                    <p>"O projeto me deu a confiança e a base para escolher a carreira em Análise e Desenvolvimento de Sistemas."</p>
-                    <p class="autor">- Maria da Silva, Ex-participante</p>
-                </article>
-                
-                <article class="depoimento">
-                    <img src="placeholder_foto2.jpg" alt="Foto da Aluna 2">
-                    <p>"Como voluntária, pude ver o impacto do nosso trabalho. É inspirador fazer parte dessa mudança."</p>
-                    <p class="autor">- Ana Souza, Voluntária</p>
-                </article>
-                
-                <article class="depoimento">
-                    <img src="placeholder_foto3.jpg" alt="Foto da Aluna 3">
-                    <p>"As oficinas de Python foram a minha porta de entrada para o mundo da programação e me fizeram amar a área."</p>
-                    <p class="autor">- Juliana Lima, Aluna IFSP</p>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="recursos" class="secao-video">
-            <h2>Comece a Programar Agora: Recursos Gratuitos</h2>
-            <div class="container-recursos">
-                
-                <div class="recurso-video">
-                    <h3>Introdução ao Python</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g_R_Asf6Co0?si=2O6KLNUg7UIKejaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
-                <div class="recurso-video">
-                    <h3>Primeiros Passos em JavaScript</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7mnxUI4u00?si=GuS6mHJMXKn-_Ngi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
-                
-            </div>
-        </section>
-        
-        <section class="cta-secundario">
-            <h2>Não perca tempo! Junte-se a nós.</h2>
-            <a href="#formulario-inscricao" class="btn-principal grande">
-                Inscreva-se e Mude Sua Carreira
-            </a>
-        </section>
-
-    </main>
-
-    <footer id="contato">
-        <div class="footer-contato">
-            <p><strong>&copy; 2024 Projeto de Extensão Meninas Programando</strong> | IFSP Campus Guarulhos</p>
-            <p><strong>Contato:</strong> <a href="mailto:mpereira@ifsp.edu.br">mpereira@ifsp.edu.br</a> (Marcia Pereira, P.O.)</p>
+        <div class="mt-4 code-snippet">
+          <code>// comece aqui
+const aprender = () =&gt; console.log('Hello, dev!')
+</code>
         </div>
-        <div class="social-links">
-            <a href="URL_INSTAGRAM" target="_blank">Instagram</a> | 
-            <a href="URL_LINKEDIN" target="_blank">LinkedIn</a> |
-            <a href="URL_YOUTUBE" target="_blank">YouTube</a>
+      </div>
+      <div class="col-lg-6 text-center mt-4 mt-lg-0 reveal">
+        <div class="card resource-card p-4 shadow floaty" style="border-radius:14px; color: white" >
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h5 style="margin:0">Recursos em destaque</h5>
+              <small style="opacity:.8">Guias, cursos e mãos na massa</small>
+            </div>
+            <div class="badge-pulse">Gratuito</div>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li class="d-flex gap-3 align-items-start mb-3">
+              <i class="fa-solid fa-book fa-2x" style="color:var(--purple)"></i>
+              <div>
+                <strong>Guia de Iniciação — HTML & CSS</strong>
+                <div style="opacity:.8;font-size:.9rem">Passo a passo com exercícios práticos.</div>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-items-start mb-3">
+              <i class="fa-solid fa-code-branch fa-2x" style="color:var(--pink)"></i>
+              <div>
+                <strong>Introdução ao Git</strong>
+                <div style="opacity:.8;font-size:.9rem">Aprenda a colaborar em projetos reais.</div>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-items-start">
+              <i class="fa-solid fa-brain fa-2x" style="color:#ffd3f0"></i>
+              <div>
+                <strong>Workshops: Lógica e Algoritmos</strong>
+                <div style="opacity:.8;font-size:.9rem">Aulas práticas e mentoria online.</div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <script src="script.js"></script>
+<!-- RECURSOS -->
+<section id="recursos" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <h2>Recursos de programação</h2>
+      <p style="opacity:.85">Conteúdo organizado por trilhas — Front-end, Back-end, Data e Mobile. Materiais, tutoriais e projetos para praticar.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-laptop-code me-2"></i>Front-end</h5>
+          <p style="opacity:.85">HTML, CSS, JavaScript, frameworks modernos e dicas de design responsivo.</p>
+          <a class="stretched-link" href="#"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-database me-2"></i>Back-end</h5>
+          <p style="opacity:.85">APIs, bancos de dados, autenticação e deploy em nuvem.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-chart-line me-2"></i>Data & IA</h5>
+          <p style="opacity:.85">Introdução a análise de dados, Machine Learning e Ética em IA.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-mobile-screen-button me-2"></i>Mobile</h5>
+          <p style="opacity:.85">Apps com React Native / Expo, boas práticas e publicação.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-book-open me-2"></i>Materiais</h5>
+          <p style="opacity:.85">E-books, cheatsheets e playlists curadas para estudo.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5><i class="fa-solid fa-people-group me-2"></i>Comunidade</h5>
+          <p style="opacity:.85">Canais no Discord/Telegram, encontros semanais e grupos de estudo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 text-center reveal">
+      <h4>Projeto em destaque</h4>
+      <p style="opacity:.85">Contribua com pequenos desafios: interfaces, documentação ou testes — aprendizagens reais.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="code-snippet mt-3 text-start"> 
+<pre>// Exemplo de issue para iniciantes
+# Bug: botão enviar não aparece no mobile
+- Passos para reproduzir
+  1. Abrir a página em tela menor que 480px
+  2. Verificar o header
+- Proposta: ajustar CSS para exibir o botão
+</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTARIADO -->
+<section id="voluntario" class="py-5 bg-dark" style="background: linear-gradient(180deg, rgba(16,8,22,0.7), rgba(10,6,12,0.9));">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 reveal">
+        <h2>Voluntarie-se</h2>
+        <p style="opacity:.9">Seja mentora, monitora ou organizadora — oferecemos experiência prática, certificação de horas e apoio para seu desenvolvimento.</p>
+        <ul style="opacity:.9">
+          <li>Mentoria técnica (1:1 ou em grupo)</li>
+          <li>Organização de workshops e encontros</li>
+          <li>Criação de conteúdo educativo</li>
+          <li>Suporte em projetos open-source da comunidade</li>
+        </ul>
+        <p class="mt-3">Inscreva-se abaixo — selecionamos por perfil e disponibilidade.</p>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="card p-4 resource-card">
+          <h5 class="mb-3">Formulário de voluntariado</h5>
+          <form id="volunteerForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome completo</label>
+              <input id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="area" class="form-label">Área de interesse</label>
+              <select id="area" name="area" class="form-select">
+                <option>Mentoria</option>
+                <option>Conteúdo / Tutoriais</option>
+                <option>Design / Front-end</option>
+                <option>Back-end / DevOps</option>
+                <option>Data / IA</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Disponibilidade / Observações</label>
+              <textarea id="message" name="message" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-accent" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Enviar inscrição</button>
+            </div>
+            <div id="volunteerResult" class="mt-3" style="display:none"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section id="eventos" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <h2>Eventos & Workshops</h2>
+      <p style="opacity:.85">Calendário de atividades: encontros ao vivo, maratonas de código e hackathons focados em aprendizado.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5>Maratona Girls Who Code</h5>
+          <p style="opacity:.85">Um fim de semana com desafios para praticar lógica, front-end e colaboração.</p>
+          <small style="opacity:.7">Próxima edição: 15 de Novembro de 2025</small>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="p-4 resource-card h-100">
+          <h5>Workshop — Git e GitHub para iniciantes</h5>
+          <p style="opacity:.85">Aprenda comandos essenciais e fluxo de trabalho com pull requests.</p>
+          <small style="opacity:.7">Formato: Online — Vagas limitadas</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="py-5 text-center" style="background:linear-gradient(90deg, rgba(111,66,193,0.12), rgba(255,93,162,0.04));">
+  <div class="container reveal">
+    <h3>Quer começar hoje?</h3>
+    <p style="opacity:.9">Baixe nosso kit de boas-vindas com exercícios práticos e um roadmap de estudos.</p>
+    <a href="#" class="btn btn-accent btn-lg"><i class="fa-solid fa-download me-2"></i>Baixar kit grátis</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 reveal">
+        <h4>Fale conosco</h4>
+        <p style="opacity:.9">Dúvidas, parcerias ou propostas de eventos — envie uma mensagem.</p>
+        <ul style="opacity:.9;list-style:none;padding:0">
+          <li><i class="fa-solid fa-envelope me-2"></i>contato@meninasprogramando.org</li>
+          <li class="mt-2"><i class="fa-brands fa-instagram me-2"></i>@meninasprogramando</li>
+          <li class="mt-2"><i class="fa-brands fa-discord me-2"></i>Link do Discord (comunidade)</li>
+        </ul>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="card p-4 resource-card">
+          <form id="contactForm">
+            <div class="mb-3"><label for="cname" class="form-label">Nome</label><input id="cname" class="form-control" required></div>
+            <div class="mb-3"><label for="cemail" class="form-label">Email</label><input id="cemail" type="email" class="form-control" required></div>
+            <div class="mb-3"><label for="cmessage" class="form-label">Mensagem</label><textarea id="cmessage" rows="3" class="form-control" required></textarea></div>
+            <div class="d-grid"><button type="submit" class="btn btn-outline-light">Enviar mensagem</button></div>
+            <div id="contactResult" class="mt-3" style="display:none"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start reveal">
+        <small>© Meninas Programando — 2025 • Construído com ♥ para aprender e ensinar</small>
+      </div>
+      <div class="col-md-6 text-center text-md-end reveal">
+        <small>Política de privacidade • Termos • <a href="#">Doações</a></small>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
