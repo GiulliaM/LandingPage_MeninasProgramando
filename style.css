@@ -115,6 +115,10 @@ footer {
   color: var(--white);
 }
 
+option{
+    color: var(--black);
+}
+
 /* Animations */
 .floaty {
   animation: floaty 6s ease-in-out infinite;
