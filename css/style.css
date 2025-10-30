@@ -90,7 +90,7 @@ footer {
 
 
 #recursos{
-      background: linear-gradient(180deg, #f8f6fb 0%, #f0e8fa 100%);
+    background: linear-gradient(180deg, #f8f6fb 0%, #f0e8fa 100%);
     color: var(--black);
 }
 #recursos .resource-card {
