@@ -191,35 +191,37 @@ const aprender = () =&gt; console.log('Hello, dev!')
       <div class="col-lg-6 reveal">
         <div class="card p-4 resource-card">
           <h5 class="mb-3">Formulário de voluntariado</h5>
-          <form id="volunteerForm">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nome completo</label>
-              <input id="name" name="name" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="email" type="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="area" class="form-label">Área de interesse</label>
-              <select id="area" name="area" class="form-select">
-                <option>Mentoria</option>
-                <option>Conteúdo / Tutoriais</option>
-                <option>Design / Front-end</option>
-                <option>Back-end / DevOps</option>
-                <option>Data / IA</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Disponibilidade / Observações</label>
-              <textarea id="message" name="message" rows="3" class="form-control"></textarea>
-            </div>
-            <div class="d-grid">
-              <button class="btn btn-accent" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Enviar inscrição</button>
-            </div>
-            <div id="volunteerResult" class="mt-3" style="display:none"></div>
-          </form>
-        </div>
+          <form id="volunteerForm" action="https://formsubmit.co/g.meneses@aluno.ifsp.edu.br" method="POST">
+              <input type="hidden" name="_subject" value="Inscrição voluntariado — Meninas Programando">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome completo</label>
+                <input id="name" name="name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="area" class="form-label">Área de interesse</label>
+                <select id="area" name="area" class="form-select">
+                  <option>Mentoria</option>
+                  <option>Conteúdo / Tutoriais</option>
+                  <option>Design / Front-end</option>
+                  <option>Back-end / DevOps</option>
+                  <option>Data / IA</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Disponibilidade / Observações</label>
+                <textarea id="message" name="message" rows="3" class="form-control"></textarea>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-accent" type="submit"><i class="fa-solid fa-paper-plane me-2"></i>Enviar inscrição</button>
+              </div>
+              <div id="volunteerResult" class="mt-3" style="display:none"></div>
+            </form>
+          </div>
       </div>
     </div>
   </div>
@@ -269,12 +271,24 @@ const aprender = () =&gt; console.log('Hello, dev!')
       </div>
       <div class="col-md-6 reveal">
         <div class="card p-4 resource-card">
-          <form id="contactForm">
-            <div class="mb-3"><label for="cname" class="form-label">Nome</label><input id="cname" class="form-control" required></div>
-            <div class="mb-3"><label for="cemail" class="form-label">Email</label><input id="cemail" type="email" class="form-control" required></div>
-            <div class="mb-3"><label for="cmessage" class="form-label">Mensagem</label><textarea id="cmessage" rows="3" class="form-control" required></textarea></div>
-            <div class="d-grid"><button type="submit" class="btn btn-outline-light" style="color: blueviolet;">Enviar mensagem</button></div>
-            <div id="contactResult" class="mt-3" style="display:none"></div>
+          <form action="https://formsubmit.co/mpereira@ifsp.edu.br" method="POST">
+            <input type="hidden" name="_subject" value="Nova mensagem do site Meninas Programando!">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="mb-3">
+              <label for="cname" class="form-label">Nome</label>
+              <input id="cname" name="nome" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="cemail" class="form-label">Email</label>
+              <input id="cemail" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="cmessage" class="form-label">Mensagem</label>
+              <textarea id="cmessage" name="mensagem" rows="3" class="form-control" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-outline-light" style="color: blueviolet;">Enviar mensagem</button>
+            </div>
           </form>
         </div>
       </div>
